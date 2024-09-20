@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bibliotek</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-secondary navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a href="index.html" class="fas fa-book navbar-brand"> Bibliotek</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarNav" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link active">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-success ms-2" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bg-secondary text-light mt-5 pt-5">
+        <section class="container">
+            <h1 class="mb-4">Contact Us</h1>
+            <p>If you have any questions or feedback, feel free to reach out to us! We are here to help.</p>
+
+            <h3>Our Contact Details</h3>
+            <p>Email: <a href="mailto:support@bibliotek.com" class="text-light">support@bibliotek.com</a></p>
+            <p>Phone: +1-800-BIBLIO-TEK</p>
+            <p>Address: 123 Library Lane, Booktown, USA</p>
+
+            <h3>Contact Form</h3>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="contactName" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="contactName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contactEmail" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="contactEmail" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contactMessage" class="form-label">Message</label>
+                    <textarea class="form-control" id="contactMessage" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-secondary text-light text-center">
+        &copy; 2024 Bibliotek | All rights reserved
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
