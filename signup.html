@@ -22,6 +22,7 @@
         .invalid-icon {
             color: red;
         }
+
     </style>
 </head>
 
@@ -47,7 +48,7 @@
             </div>
         </nav>
     </header>
-    <div class="background">
+    <main class="background">
 
     <div class="formcontainer max-w-md mx-auto p-6 rounded-lg shadow-lg mt-5">
         <h2 class="text-2xl font-bold mb-4">Sign Up</h2>
@@ -87,17 +88,9 @@
                 <i id="phoneFeedback" class="absolute right-2 top-1/2 transform -translate-y-1/2"></i>
             </div>
 
-            <div class="input-container mb-4 relative">
-                <input type="text" id="address" name="address" required>
-                <label for="address" class="block text-sm font-medium text-gray-700">Enter your Address</label>
-                <span id="addressError" class="error text-red-500 text-sm"></span>
-                <i id="addressFeedback" class="absolute right-2 top-1/2 transform -translate-y-1/2"></i>
-            </div>
-
             <div class="input-container mb-4">
-                <label for="gender" class="block text-sm font-medium text-gray-700">Select your Gender</label>
                 <select id="gender" name="gender" class="p-2">
-                    <option value="" selected disabled>-- Select Gender --</option>
+                    <option value="" selected disabled>Select your Gender</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="other">Other</option>
@@ -110,8 +103,8 @@
         <p class="text-sm text-gray-500 mt-4">Already have an account? <a href="login.html" class="text-blue-500">Login here</a>.</p>
     </div>
 
-    </div>
-    <footer class="bg-secondary mt-5">&copy;2024 Bibliotek | All rights reserved</footer>
+    </main>
+    <footer class="bg-secondary">&copy;2024 Bibliotek | All rights reserved<br><span class="mail">Let us know your Queries </span><a href="mailto:urbanrentals321@gmail.com">here</a>
 
     <script src="formscript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

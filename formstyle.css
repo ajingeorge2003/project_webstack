@@ -4,6 +4,7 @@ footer {
     padding: 50px;
     color: azure;
     position: relative;
+    width: 100%;
 }
 
 footer > a {
@@ -21,6 +22,7 @@ section {
 }
 
 .background {
+    min-height: calc(100vh - 56px);
     background-image: url("./images/1.jpg");
     background-size: cover;
     background-position: center;
@@ -131,6 +133,42 @@ i.text-red-500 {
 .input-container input[type="date"]:focus {
     border-color: #009087;
     background-color: #fff;
+}
+select {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+select::-ms-expand {
+    display: none;
+}
+
+
+select:hover {
+    outline: none;
+    background-color: #288e92;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+option[disabled] {
+    color: #aaa;
+}
+
+/* Option styling (doesn't apply to most browsers but good practice) */
+option {
+    padding: 10px;
+    font-size: 16px;
 }
 
 .dob{
